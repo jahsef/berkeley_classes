@@ -88,6 +88,16 @@ def balanced(m: Structure) -> bool:
     
     return False
 
+def helper(m:Structure, map: list[int], depth): #depth
+    # if a leaf node we assign its depth
+    
+    if m is None:
+        return
+    if type(m) is Planet:
+        map.append(depth)
+    
+        
+
 
 def interleave[T](s: LinkedList[T], t: LinkedList[T]) -> LinkedList[T]:
     """Interleave linked lists s and t to produce a new linked list.
